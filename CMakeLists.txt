@@ -73,6 +73,7 @@ foreach(source ${TEST_LAB_SOURCES})
 	add_executable(${target} ${source})
 	set_compiler_settings(${target} EXTENSIONS NO)
 	target_link_libraries(${target} PRIVATE testDriver)
+	install(TARGETS ${target} DESTINATION bin)
 
 	string(REPLACE "testLab" "lab" test ${target})
 	add_test(NAME ${test}
