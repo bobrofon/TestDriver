@@ -10,7 +10,7 @@ extern const char labName[];
 extern int labTimeout;
 extern size_t labOutOfMemory;
 
-#define MIN_PROCESS_RSS_BYTES (1024*1024*sizeof(void*)/4)
+#define MIN_PROCESS_RSS_BYTES (2*1024*1024*sizeof(void*)/4)
 
 #ifdef _WIN32
 // Helpers for Windows
